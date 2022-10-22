@@ -1,4 +1,4 @@
-import { assert, beforeAll, expect, test, describe } from "vitest";
+import { beforeAll, expect, test, describe } from "vitest";
 
 import { compileWat } from "./compile-wat";
 
