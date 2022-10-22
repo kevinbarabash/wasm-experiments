@@ -77,12 +77,7 @@ describe("reference-types", () => {
 
     const add = instance.exports.add as Function;
     const sub = instance.exports.sub as Function;
-    const setFuncref = instance.exports.setFuncref as Function;
     const doMath = instance.exports.doMath as Function;
-
-    // NOTE: JavaScript functions can't be used a function refs.
-    setFuncref(0, add);
-    setFuncref(1, sub);
 
     expect(doMath()).toEqual([15, 5]);
   });

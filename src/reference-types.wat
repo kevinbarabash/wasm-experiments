@@ -29,13 +29,13 @@
   ;; This function can be used to update entries in the $tbl table
   ;; with funcrefs defined within this wasm module.
   ;; NOTE: JavaScript functions can't be used as function refs.
-  (func (export "setFuncref") (param $i i32) (param $r funcref)
+  (func $setFuncref (export "setFuncref") (param $i i32) (param $r funcref)
     (table.set $tbl (local.get $i) (local.get $r))
   )
 
-  ;; expects $add to be in slot 0 and $sub to be in slot 1
   (func (export "doMath") (result i32 i32)
-    ;; 5 + 10
+    (call $setFuncref (i32.const 0) (ref.func $add))
+    (call $setFuncref (i32.const 1) (ref.func $sub))
     
     ;; it's a little weird for the args to be in the middle, but
     ;; $tbl is immediate as is the type sig.  When providing args
