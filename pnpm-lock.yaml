@@ -1,12 +1,18 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@types/node': ^18.11.3
   '@vitest/coverage-c8': ^0.24.3
   '@vitest/ui': ^0.24.3
   vite: ^3.1.8
   vitest: ^0.24.3
+  wabt: 1.0.30-nightly.20221012
+
+dependencies:
+  wabt: 1.0.30-nightly.20221012
 
 devDependencies:
+  '@types/node': 18.11.3
   '@vitest/coverage-c8': 0.24.3_@vitest+ui@0.24.3
   '@vitest/ui': 0.24.3
   vite: 3.1.8
@@ -872,6 +878,11 @@ packages:
       - supports-color
       - terser
     dev: true
+
+  /wabt/1.0.30-nightly.20221012:
+    resolution: {integrity: sha512-QuFy3tfb2lEGSTDf8OZ5OLMiWTdfZldbsOxe1ubXYMAWw/7CFL4LDoWdjOkJz6iZ9uHTkUe4ysPekU2Xz1u8qg==}
+    hasBin: true
+    dev: false
 
   /which/2.0.2:
     resolution: {integrity: sha512-BLI3Tl1TW3Pvl70l3yq3Y64i+awpwXqsGBYWkkqMtnbXgrMD+yj7rhW0kuEDxzJaYXGjEW5ogapKNMEKNMjibA==}
