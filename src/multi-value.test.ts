@@ -8,7 +8,7 @@ describe("hello", () => {
 
   beforeAll(async () => {
     try {
-      const watPath = new URL("./hello-world.wat", import.meta.url).pathname;
+      const watPath = new URL("./multi-value.wat", import.meta.url).pathname;
       const { buffer } = await compileWat(watPath);
       wasmModule = await WebAssembly.compile(buffer);
     } catch (err) {
