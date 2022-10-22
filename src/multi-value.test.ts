@@ -2,7 +2,7 @@ import { assert, beforeAll, expect, test, describe } from "vitest";
 
 import { compileWat } from "./compile-wat";
 
-describe("hello", () => {
+describe("multi-value", () => {
   let wasmModule: WebAssembly.Module;
   const importObj = {};
 
