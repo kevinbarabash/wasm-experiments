@@ -1,0 +1,21 @@
+{
+  "name": "wasm-experiments",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "test:run": "vitest run",
+    "coverage": "vitest run --coverage"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@vitest/coverage-c8": "^0.24.3",
+    "@vitest/ui": "^0.24.3",
+    "vite": "^3.1.8",
+    "vitest": "^0.24.3"
+  }
+}
