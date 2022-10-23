@@ -13,6 +13,7 @@ let defaultWabtOptions: WasmFeatures = {
   reference_types: true,
   annotations: true,
   gc: true,
+  tail_call: true,
 };
 
 // Reads a *.wat file, parses to a *.wasm binary in-memory, and then compiles to a Wasm module we can instantiate
