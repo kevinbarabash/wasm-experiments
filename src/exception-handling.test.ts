@@ -15,12 +15,13 @@ const importObj = {
   },
 };
 
-describe("try-catch", () => {
+describe("Exception Handling", () => {
   let wasmModule: WebAssembly.Module;
 
   beforeAll(async () => {
     try {
-      const watPath = new URL("./try-catch.wat", import.meta.url).pathname;
+      const watPath = new URL("./exception-handling.wat", import.meta.url)
+        .pathname;
       const { buffer } = await compileWat(watPath);
       wasmModule = await WebAssembly.compile(buffer);
     } catch (err) {

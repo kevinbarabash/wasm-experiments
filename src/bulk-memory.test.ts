@@ -2,7 +2,7 @@ import { beforeAll, expect, test, describe } from "vitest";
 
 import { compileWat } from "./compile-wat";
 
-describe("bulk-memory", () => {
+describe("Bulk Memory", () => {
   let wasmModule: WebAssembly.Module;
   const importObj = {};
 

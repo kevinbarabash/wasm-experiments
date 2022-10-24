@@ -1,3 +1,4 @@
+;; Proposal: https://github.com/WebAssembly/spec/blob/master/proposals/multi-value/Overview.md
 (module
   (memory (export "mem") 1)
 

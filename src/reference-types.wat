@@ -1,3 +1,4 @@
+;; Proposal: https://github.com/WebAssembly/reference-types/blob/master/proposals/reference-types/Overview.md
 (module
   (import "js" "tbl" (table $tbl 2 funcref))
   (type $retNumSig (func (result i32)))

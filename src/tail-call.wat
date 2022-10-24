@@ -1,3 +1,4 @@
+;; Proposal: https://github.com/WebAssembly/tail-call/blob/master/proposals/tail-call/Overview.md
 (func $fac (export "factorial") (param $x i64) (result i64)
   (return_call $fac-aux (local.get $x) (i64.const 1))
 )

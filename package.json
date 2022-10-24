@@ -7,7 +7,9 @@
     "test": "vitest",
     "test:ui": "vitest --ui",
     "test:run": "vitest run",
-    "coverage": "vitest run --coverage"
+    "coverage": "vitest run --coverage",
+    "tail-call": "node --experimental-wasm-return_call src/tail-call.mjs",
+    "type-reflection": "node --experimental-wasm-type_reflection src/type-reflection.mjs"
   },
   "keywords": [],
   "author": "",

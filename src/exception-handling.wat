@@ -1,3 +1,4 @@
+;; https://github.com/WebAssembly/exception-handling/blob/master/proposals/exception-handling/Exceptions.md
 (module
   ;; Import tag that will be referred to here as $tagname
   (import "extMod" "extTag" (tag $extTag (param i32)))

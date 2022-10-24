@@ -2,7 +2,7 @@ import { beforeAll, expect, test, describe } from "vitest";
 
 import { compileWat } from "./compile-wat";
 
-describe("reference-types", () => {
+describe("Reference Types", () => {
   let wasmModule: WebAssembly.Module;
 
   beforeAll(async () => {

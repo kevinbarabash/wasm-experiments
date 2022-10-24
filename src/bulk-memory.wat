@@ -1,3 +1,4 @@
+;; Proposal: https://github.com/WebAssembly/bulk-memory-operations/blob/master/proposals/bulk-memory-operations/Overview.md
 (module
   (memory (export "mem") 1)
   (data (i32.const 0) "hello")   ;; data segment 0, is active so always copied
